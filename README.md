@@ -27,7 +27,7 @@ networks:
 services:
   mysql-tunnel:
     image: karibash/ssh-tunnel
-    container_name: db-tunnel
+    container_name: mysql-tunnel
     ports:
       - 3306:3306
     networks:
@@ -47,7 +47,7 @@ services:
 
   postgres-tunnel:
     image: karibash/ssh-tunnel
-    container_name: db-tunnel
+    container_name: postgres-tunnel
     ports:
       - 5432:5432
     networks:
